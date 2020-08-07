@@ -1,0 +1,38 @@
+<html lang="en" dir="ltr"> 
+<head>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+          <h1 >Welcom in IOT</h1>
+          <p class="description ">
+            In this site I will do four buttons for moving Robots.
+          </p>
+        </header>
+        <br>
+        <br>
+          <a href="img/Forward.jpg" target="_blank" title="Forward " class="button  btnBlueGreen ">Forward</a>
+          <a href="img/Right.jpg" target="_blank"title="Right" class="button  btnLightBlue ">Right</a>
+          <a href="img/Backward.jpg" target="_blank"title="Backward" class="button  btnOrange ">Backward</a>
+          <a href="img/Left.jpg" target="_blank" title="Left" class="button  btnPurple ">Left</a>
+         <a href="" class="button btnRed"title="Stop"  >Stop</a>
+       </div> 
+      
+</body>
+
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "192fc3b8-ab52-4a1c-aee0-2fe09cd60b29", // The ID of this integration.
+      region: "au-syd", // The region your integration is hosted in.
+      serviceInstanceID: "97484cc0-cfda-48cc-a0b0-e8148690da45", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
+</html>
